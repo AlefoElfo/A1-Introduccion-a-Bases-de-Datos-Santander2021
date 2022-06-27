@@ -18,7 +18,25 @@ Usando la base de datos `tienda`, muestra la descripción de las tablas `articul
 
 | Tipo   | Descripción |
 |---|---|
-|   |   |
+|Tabla:|articulo|
+|id_articulo|int|
+|nombre|varchar(45)|
+|precio|double|
+|iva|double|
+|cantidad|int|
+|---|---|
+|Tabla:|puesto|
+|id_puesto|int|
+|nombre|varchar(45)|
+|salario|double|
+|---|---|
+|Tabla:|venta|
+|id_venta|int|
+|id_articulo|int|
+|id_empleado|int|
+|clave|varchar(45)|
+|fecha|timestamp|
+
 
 <br/>
 
