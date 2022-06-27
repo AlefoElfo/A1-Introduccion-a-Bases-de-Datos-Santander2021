@@ -34,9 +34,9 @@ from
 		clave,
 		id_empleado, 
 		(select nombre from empleado where id_empleado = venta.id_empleado) nombre_empleado,
-		count(*) as total 
+		count(*) total 
 	from venta
-	group by clave, id_empleado) as vnt
+	group by clave, id_empleado) vnt
 group by id_empleado
 ;
 ```
