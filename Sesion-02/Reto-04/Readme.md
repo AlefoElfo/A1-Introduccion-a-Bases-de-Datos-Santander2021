@@ -27,7 +27,7 @@ where id_puesto in
 ```
 - ¿Cuál es la cantidad mínima y máxima de ventas de cada empleado?
 ```sql
-select id_empleado, min(total_ventas), max(total_ventas)
+select id_empleado, min(totales), max(totales)
 from
 	(select clave, id_empleado, count(*) as totales
 	from venta
