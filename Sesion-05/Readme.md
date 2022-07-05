@@ -22,10 +22,25 @@ Comencemos la sesión con un pequeño debate. :open_mouth:
 1. Para comenzar contesta las siguientes preguntas:
 
    - ¿Cuáles son los principales elementos de una base de datos relacional?
+      - Datos estructurados en filas, columnas, llaves primarias y foráneas, datos y tipos de datos
+      - A tomicity. Las transacciones se realizan completamente o se cancelan
+      - C onsistensy. Las transacciones sólo se hacen si son válidas
+      - I solation. Las transacciones ocurren de forma aislada hasta que se finalizan
+      - D urability. Una vez finalizada e integrada, el dato se mantiene sin corrupción
    - ¿Cuáles son los principales elementos de una base de datos no relacional (*NoSQL*)?
+      - Datos semi-estructurados en claves:valores
+      - F lexibility
+      - S calable
+      - P erformance (High)
+      - F uncional
    - ¿Qué ventajas tiene usar una base de datos relacional?
+      - Sintaxis de consulta
+      - Propiedades ACID
    - ¿Qué ventajas tiene usar una base de datos no relacional?
+      - Potencial de datos por almancenar
+      - Flexibilidad, su escalabilidad, su baja latencia
    - ¿Cuál es el mejor tipo de base de datos entonces?
+      - Depende el tipo de datos a trabajar y el propósito
 
 2. Comenta tus respuestas con el grupo. 
 
