@@ -18,25 +18,35 @@ Usando la base de datos `sample_mflix`, agrega proyeccciones, filtros, ordenamie
 
 - ¿Qué comentarios ha hecho Greg Powell?
 ~~~mongodb
-/Filter:/
+//Filter://
 {name: /Greg Powell/}
-/Project:/
+//Project://
 {name: 1, text: 1}
 ~~~
 - ¿Qué comentarios han hecho Greg Powell o Mercedes Tyler?
 ~~~mongodb
-/Filter:/
+//Filter://
 {$or: [{name: /Greg Powell/}, {name: /Mercedes Tyler/}]}
-/Project:/
+//Project://
 {name: 1, text: 1}
 ~~~
 - ¿Cuál es el máximo número de comentarios en una película?
 ~~~mongodb
-
+//Project://
+{num_mflix_comments: 1}
+//Sort://
+{num_mflix_comments: -1}
+//Limit://
+1
 ~~~
 - ¿Cuál es título de las cinco películas más comentadas?
 ~~~mongodb
-
+//Project://
+{title: 1, num_mflix_comments: 1}
+//Sort://
+{num_mflix_comments: -1}
+//Limit://
+5
 ~~~
 
 <br/>
