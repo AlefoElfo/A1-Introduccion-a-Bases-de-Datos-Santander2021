@@ -18,10 +18,16 @@ Usando la base de datos `sample_mflix`, proyecta los datos que se solicitan.
 
 - Fecha, nombre y texto de cada comentario.
 ~~~mongodb
-	{date: 1, name: 1, text: 1, _id: 0}
+{date: 1, name: 1, text: 1, _id: 0}
 ~~~
 - Título, elenco y año de cada película.
+~~~mongodb
+{titel: 1, cast: 1, year: 1, _id: 0}
+~~~	
 - Nombre y contraseña de cada usuario.
+~~~mongodb
+{name: 1, password: 1, _id: 0}
+~~~
 
 <br/>
 
